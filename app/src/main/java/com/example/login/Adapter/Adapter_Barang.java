@@ -17,7 +17,6 @@ import com.example.login.R;
 import java.util.ArrayList;
 
 public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangViewHolder> {
-
     private final Context mCtx;
     private final ArrayList<m_barang> listBarang;
 
@@ -28,14 +27,14 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
 
     @NonNull
     @Override
-    public Adapter_Barang.BarangViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BarangViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mCtx);
         @SuppressLint("InflateParams") View view = inflater.inflate(R.layout.list_barang, null);
         return new BarangViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Adapter_Barang.BarangViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull BarangViewHolder holder, int position) {
         m_barang mb = listBarang.get(position);
         holder.tvNama.setText(mb.getNama_barang());
         holder.imgBarang.setImageResource(mb.getImg());

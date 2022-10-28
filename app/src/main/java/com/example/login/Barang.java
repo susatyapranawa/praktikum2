@@ -1,12 +1,10 @@
 package com.example.login;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-
-import android.widget.ListView;
 
 import com.example.login.Adapter.Adapter_Barang;
 import com.example.login.Model.m_barang;
@@ -14,7 +12,6 @@ import com.example.login.Model.m_barang;
 import java.util.ArrayList;
 
 public class Barang extends AppCompatActivity {
-
     RecyclerView lvBarang;
     ArrayList<m_barang> data;
     Adapter_Barang adp;
@@ -27,7 +24,9 @@ public class Barang extends AppCompatActivity {
         lvBarang = findViewById(R.id.lvBarang);
 
         dataBarang();
+
     }
+
     public void dataBarang(){
 //        ArrayList<String> dataB = new ArrayList<>();
 //        dataB.add("Monitor");
@@ -51,4 +50,5 @@ public class Barang extends AppCompatActivity {
         lvBarang.setLayoutManager(llm);
         lvBarang.setAdapter(adp);
     }
+
 }
