@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.login.Model.m_barang;
 import com.example.login.R;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangViewHolder> {

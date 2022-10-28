@@ -3,6 +3,7 @@ package com.example.login.Model;
 public class m_barang {
     String id;
     String nama_barang;
+    String harga;
     int img;
 
     public m_barang(String nama_barang, int img) {
@@ -44,5 +45,13 @@ public class m_barang {
     public void setImg(int img) {
 
         this.img = img;
+    }
+
+    public String getHarga() {
+        return harga;
+    }
+
+    public void setHarga(String harga) {
+        this.harga = harga;
     }
 }

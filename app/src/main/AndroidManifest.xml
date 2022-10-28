@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LogIn">
         <activity
+            android:name=".Harga"
+            android:exported="false" />
+        <activity
             android:name=".Barang"
             android:exported="false" />
         <activity
