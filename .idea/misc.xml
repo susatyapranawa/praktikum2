@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/104/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
+        <entry key="..\:/104/app/src/main/res/layout/activity_barang.xml" value="0.1539855072463768" />
+        <entry key="..\:/104/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
         <entry key="..\:/104/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/104/app/src/main/res/layout/list_barang.xml" value="0.1539855072463768" />
       </map>
     </option>
   </component>
