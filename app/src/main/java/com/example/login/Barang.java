@@ -2,9 +2,10 @@ package com.example.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+
 import android.widget.ListView;
 
 import com.example.login.Adapter.Adapter_Barang;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 
 public class Barang extends AppCompatActivity {
 
-    ListView lvBarang;
+    RecyclerView lvBarang;
     ArrayList<m_barang> data;
     Adapter_Barang adp;
 
