@@ -41,6 +41,7 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
     public void onBindViewHolder(@NonNull BarangViewHolder holder, int position) {
         m_barang mb = listBarang.get(position);
         holder.tvNama.setText(mb.getNama_barang());
+        holder.tvHarga.setText(mb.getHarga());
         holder.imgBarang.setImageResource(mb.getImg());
 
         holder.imgBarang.setOnClickListener(view -> {
@@ -56,6 +57,7 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
 
     static class BarangViewHolder extends RecyclerView.ViewHolder {
 
+        TextView tvHarga;
         TextView tvNama;
         ImageView imgBarang;
 
@@ -63,6 +65,7 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
             super(itemView);
 
             tvNama = itemView.findViewById(R.id.tvNama);
+            tvHarga = itemView.findViewById(R.id.tvHarga);
             imgBarang = itemView.findViewById(R.id.imgBrg);
         }
     }
