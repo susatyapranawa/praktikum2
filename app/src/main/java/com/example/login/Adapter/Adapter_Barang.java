@@ -41,7 +41,6 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
     public void onBindViewHolder(@NonNull BarangViewHolder holder, int position) {
         m_barang mb = listBarang.get(position);
         holder.tvNama.setText(mb.getNama_barang());
-        holder.tvHarga.setText(mb.getHarga());
         holder.imgBarang.setImageResource(mb.getImg());
 
         holder.imgBarang.setOnClickListener(view -> {
