@@ -29,8 +29,8 @@ public class Barang extends AppCompatActivity {
 
     public void dataBarang(){
         data = new ArrayList<>();
-        data.add(new m_barang("Monitor","2000.000", R.drawable.ic_bike));
-        data.add(new m_barang("Keyboard",500.000, R.drawable.ic_profil));
+        data.add(new m_barang("Monitor", R.drawable.ic_bike));
+        data.add(new m_barang("Keyboard",R.drawable.ic_profil));
         adp = new Adapter_Barang(this, data);
         LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
