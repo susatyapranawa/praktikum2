@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LogIn">
         <activity
+            android:name=".Kelola_barang"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Tambah_barang"
+            android:exported="false" />
+        <activity
             android:name=".Detail_barang"
             android:exported="false" />
         <activity
@@ -40,5 +50,7 @@
             <!-- </intent-filter> -->
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

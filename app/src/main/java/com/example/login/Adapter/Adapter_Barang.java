@@ -13,8 +13,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.login.Detail_barang;
+import com.example.login.Kelola_barang;
 import com.example.login.Model.m_barang;
 import com.example.login.R;
+import com.example.login.helper.Helper;
 
 import org.w3c.dom.Text;
 
@@ -41,12 +43,27 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
     public void onBindViewHolder(@NonNull BarangViewHolder holder, int position) {
         m_barang mb = listBarang.get(position);
         holder.tvNama.setText(mb.getNama_barang());
-        holder.tvHarga2.setText(mb.getHarga2());
+        holder.tvHarga2.setText(String.valueOf(mb.getHarga2()));
+        holder.tvSatuan.setText(mb.getSatuan());
+        holder.tvStok.setText(mb.getStok());
         holder.imgBarang.setImageResource(mb.getImg());
 
         holder.imgBarang.setOnClickListener(view -> {
-            view.getContext().startActivity(new Intent(mCtx, Detail_barang.class));
+            ArrayList<m_barang> brg = new ArrayList<>();
+            brg.add(new m_barang(
+                    mb.getId_barang(),
+                    mb.getNama_barang(),
+                    mb.getHarga2(),
+                    mb.getSatuan(),
+                    mb.getStok()
+            ));
+            Helper.setBarang(brg);
+            mCtx.startActivity(new Intent(mCtx, Kelola_barang.class));
         });
+
+//        holder.imgBarang.setOnClickListener(view -> {
+//            view.getContext().startActivity(new Intent(mCtx, Detail_barang.class));
+//        });
 //
     }
 
@@ -59,6 +76,8 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
 
         TextView tvHarga2;
         TextView tvNama;
+        TextView tvSatuan;
+        TextView tvStok;
         ImageView imgBarang;
 
         public BarangViewHolder(View itemView) {
@@ -66,6 +85,8 @@ public class Adapter_Barang extends RecyclerView.Adapter<Adapter_Barang.BarangVi
 
             tvNama = itemView.findViewById(R.id.tvNama);
             tvHarga2 = itemView.findViewById(R.id.tvHarga2);
+            tvSatuan = itemView.findViewById(R.id.tvSatuan);
+            tvStok = itemView.findViewById(R.id.tvStok);
             imgBarang = itemView.findViewById(R.id.imgBrg);
         }
     }

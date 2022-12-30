@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561565433044",
+    "project_id": "pemmobile-2",
+    "storage_bucket": "pemmobile-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561565433044:android:d4d26d80b11bd9dc46cf41",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561565433044-qv6c82qu4kgbqfl3servpim95drp30de.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2c4A3Tr78xXe89jPh3fHg1cBJevk7Yeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561565433044-qv6c82qu4kgbqfl3servpim95drp30de.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

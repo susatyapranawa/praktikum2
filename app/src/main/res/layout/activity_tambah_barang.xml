@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tambah_barang">
+
+    <TextView
+        android:id="@+id/tvTambahBarang"
+        android:text="Tambah Barang"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txtNamaBrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTambahBarang"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="Masukkan Nama Barang"/>
+
+    <EditText
+        android:id="@+id/txtHargaBrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNamaBrg"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Masukkan Harga Barang"/>
+
+    <TextView
+        android:id="@+id/labelSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHargaBrg"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Pilih Satuan"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSpinner"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/txtJumlahStok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="Jumlah Stok"/>
+
+    <Button
+        android:id="@+id/btnInputBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txtJumlahStok"
+        android:text="INPUT BARANG"
+        android:textAllCaps="true"/>
+</RelativeLayout>
